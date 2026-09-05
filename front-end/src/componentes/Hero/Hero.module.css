@@ -3,14 +3,8 @@
     min-height: 500px;
     padding: 80px 10%;
     align-items: center;
-    background-color:  #fff9fd;
-    background-image: 
-    linear-gradient(#f6e8f1 1px, transparent 1px),
-    linear-gradient(90deg, #f6e8f8 1px,transparent 1px);
-    background-size: 34px 34px;
-
+    background: transparent;
 }
-
 .conteudo{
 max-width: 700px;
 
@@ -29,7 +23,7 @@ h1{
     margin: 15px 0;
     font-size: 64px;
     line-height: 1.05;
-    color: #202938;
+    color: #350035;
 }
 
 h1 span{
@@ -41,7 +35,7 @@ h1 span{
 max-width: 600px;
 font-size: 18px;
 line-height: 1.6;
-color: #555;
+color: #5c0048;
 }
 
 .botao{

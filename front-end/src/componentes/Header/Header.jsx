@@ -2,7 +2,7 @@
 import styles from './Header.module.css'
 
 
-function Header(){
+function Header({aoClicarCadastrar}){
 
     return(
 
@@ -11,7 +11,7 @@ function Header(){
                 <nav className={styles.nav}>
                     <a href="#inicio">Inicio</a>
                     <a href="#destinos">Destinos</a>
-                    <a href="#cadastro">Cadastro</a>
+                    <a href="#cadastro" onClick={aoClicarCadastrar}>Cadastro</a>
                 </nav>
 
 

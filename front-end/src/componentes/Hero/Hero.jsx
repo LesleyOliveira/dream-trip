@@ -1,7 +1,7 @@
 import styles from './Hero.module.css'
 
 
-function Hero(){
+function Hero({aoClicarCadastrar}){
 
     return(
         <section className={styles.hero} id="inicio">
@@ -17,13 +17,9 @@ function Hero(){
 
             </p>
 
-            <a href="#cadastro" className={styles.botao}>Cadastre destino</a>
+            <a href="#cadastro" className={styles.botao} onClick={aoClicarCadastrar}>Cadastre destino</a>
 
         </div>
-        
-        
-        
-
         
         </section>
     )
