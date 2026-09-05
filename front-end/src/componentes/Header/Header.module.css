@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    width: 100%;
+    padding: 24px 55px;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-bottom: 1px solid #f1dbea;
+
+}
+
+
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    color:  #f45ba8;
+
+}
+
+.nav{
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+
+}
+
+.nav a{
+    color: #4b4b4b;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+
+.nav a:hover{
+
+    color: #f45ba8;
+
+}
