@@ -1,0 +1,64 @@
+.hero{
+    display: flex;
+    min-height: 500px;
+    padding: 80px 10%;
+    align-items: center;
+    background-color:  #fff9fd;
+    background-image: 
+    linear-gradient(#f6e8f1 1px, transparent 1px),
+    linear-gradient(90deg, #f6e8f8 1px,transparent 1px);
+    background-size: 34px 34px;
+
+}
+
+.conteudo{
+max-width: 700px;
+
+}
+
+.destaque{
+color: #f45ba8;
+font-weight: 700;
+font-size: 15px;
+letter-spacing: 1px;
+
+
+}
+
+h1{
+    margin: 15px 0;
+    font-size: 64px;
+    line-height: 1.05;
+    color: #202938;
+}
+
+h1 span{
+    display: block;
+    color: #f45ba8;
+}
+
+.descricao{
+max-width: 600px;
+font-size: 18px;
+line-height: 1.6;
+color: #555;
+}
+
+.botao{
+display: inline-block;
+margin-top:25px ;
+padding: 14px 24px;
+background-color: #f45ba8;
+border-radius: 30px;
+color: white;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+
+}
+
+.botao:hover{
+transform: translateY(-3px);
+
+
+}

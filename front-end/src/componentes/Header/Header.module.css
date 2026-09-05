@@ -1,12 +1,14 @@
 .header{
     display: flex;
     width: 100%;
-    padding: 24px 55px;
+    padding: 20px 55px;
+    box-sizing: border-box;
     align-items: center;
     /* text-align: center; */
     justify-content: space-between;
     background-color: aliceblue;
     border-bottom: 1px solid #f1dbea;
+    
 
 }
 

@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Header from './componentes/Header/Header'
+import Hero from './componentes/Hero/Hero'
 
 function App() {
  
@@ -11,11 +12,7 @@ function App() {
 
     <>
       <Header />
-
-      <main>
-        <h2>Conhecendo o mundo com Dream-Trip</h2>
-        <p>Cadastrando e Organizando meus destinos dos sonhos!!!</p>
-      </main>
+      <Hero />
 
     </>
 
