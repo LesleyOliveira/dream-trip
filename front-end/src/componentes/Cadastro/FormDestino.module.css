@@ -1,89 +1,111 @@
-.containerPrincipal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    background-color: transparent;
+ .formulario {
+min-height: 100vh;
+padding: 80px 20px;
+background-color: #fff9fd;
+background-image:
+linear-gradient(#f6e8f1 1px, transparent 1px),
+linear-gradient(90deg, #f6e8f1 1px, transparent 1px);
+background-size: 34px 34px;
 }
 
 .card {
-    background: #f1d0e5;
-    width: 100%;
-    max-width: 650px;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    border: 1px solid #fcace2;
-    box-sizing: border-box;
+max-width: 850px;
+margin: 0 auto;
+padding: 45px;
+background-color: #ffffff;
+border: 1px solid #f3d7e8;
+border-radius: 24px;
+box-shadow: 0 10px 35px rgba(244, 91, 168, 0.08);
 }
 
-.card h2 {
-    font-size: 28px;
-    color: #ad2697;
-    text-align: center;
-    margin: 0 0 8px 0;
+.titulo {
+text-align: center;
+margin-bottom: 8px;
+font-size: 36px;
+color: #202938;
 }
 
 .subtitulo {
-    color: #52184a;
-    text-align: center;
-    font-size: 15px;
-    margin: 0 0 30px 0;
+text-align: center;
+margin-bottom: 35px;
+color: #777;
+font-size: 17px;
 }
 
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.form {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 22px;
 }
-
-.linhaCampos {
-    display: flex;
-    gap: 16px;
-}
-
 
 .campo {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.campoCompleto {
+  grid-column: 1 ;
 }
 
 .campo label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #a3327e;
+font-size: 15px;
+font-weight: 600;
+color: #333;
 }
 
-.campo input {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #e8cddd;
-    border-radius: 12px;
-    font-size: 15px;
-    outline: none;
-    box-sizing: border-box;
-    transition: 0.3s;
-    background-color: #fafafa;
+.campo input, .campo select,.campo textarea {
+width: 100%;
+padding: 13px 15px;
+border: 1px solid #e8cddd;
+border-radius: 12px;
+background-color: #fff;
+font-size: 15px;
+font-family: inherit;
+outline: none;
+transition: 0.3s;
 }
 
+.campo input:focus,.campo select:focus,.campo textarea:focus {
+border-color: #f45ba8;
+box-shadow: 0 0 0 3px rgba(244, 91, 168, 0.1);
+}
+
+.campo textarea {
+min-height: 100px;
+resize: vertical;
+}
 
 .botao {
-    width: 60%;
-    margin: 15px auto 0;
-    padding: 14px;
-    border: none;
-    border-radius: 30px;
-    background-color: #f45ba8;
-    color: rgb(253, 243, 243);
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
+grid-column: 1 ;
+justify-self: center;
+margin-top: 10px;
+padding: 14px 35px;
+border: none;
+border-radius: 30px;
+background-color: #f45ba8;
+color: white;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.3s;
 }
 
 .botao:hover {
-    transform: translateY(-2px);
+  transform: translateY(3px);
+  box-shadow: 0 8px 20px rgba(244, 91, 168, 0.25);
 }
 
+@media (max-width: 700px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .campoCompleto {
+    grid-column: auto;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+}
