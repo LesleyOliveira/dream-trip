@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import javax.print.DocFlavor;
 import java.awt.dnd.DragGestureEvent;
 import java.sql.PreparedStatement;
@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/destinos")
+@CrossOrigin(origins = "http://localhost:5173")
 public class DestinoController {
 
     private final JdbcTemplate jdbcTemplate;
