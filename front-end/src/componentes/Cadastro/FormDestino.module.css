@@ -22,13 +22,13 @@ box-shadow: 0 10px 35px rgba(244, 91, 168, 0.08);
 text-align: center;
 margin-bottom: 8px;
 font-size: 36px;
-color: #202938;
+color: #b1067d;
 }
 
 .subtitulo {
 text-align: center;
 margin-bottom: 35px;
-color: #777;
+color: #646161;
 font-size: 17px;
 }
 
@@ -51,7 +51,7 @@ gap: 8px;
 .campo label {
 font-size: 15px;
 font-weight: 600;
-color: #333;
+color: #b1067d;
 }
 
 .campo input, .campo select,.campo textarea {

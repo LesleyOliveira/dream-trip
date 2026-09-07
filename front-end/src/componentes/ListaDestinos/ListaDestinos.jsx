@@ -30,17 +30,18 @@ function ListaDestinos(){
     }
 
     if(carregando){
-        return <p>Carreando os destinos..</p>
+        return <p className={styles.mensagem}>Carreando os destinos..</p>
     }
 
     if(erro){
-        return  <p>{erro}</p>
+        return  <p className={styles.erro}>{erro}</p>
     }
 
     return(
 
-        <section className={styles.lista} >
-            <h2>Meus destinos dos sonhos!!</h2>
+        <section className={styles.lista}  >
+            <h2 className={styles.titulo}>Meus destinos dos sonhos!!</h2>
+            
             {destinos.length === 0 ? (
                 <p>Não tem nenhumm destino cadastrado ainda</p>
             ): (
@@ -53,8 +54,12 @@ function ListaDestinos(){
                             <p>{destino.categoria}</p>
                             <p>{destino.custoEstimado}</p>
                             <p>{destino.prioridade}</p>
+
                             <p>{destino.status}</p>
-                            {destino.observacao && (<p>{destino.observacao}</p>)}
+                            {destino.observacao && 
+                            (<p className={styles.observacao}>
+                                {destino.observacao}
+                                </p>)}
                              </div>
                              
                             )

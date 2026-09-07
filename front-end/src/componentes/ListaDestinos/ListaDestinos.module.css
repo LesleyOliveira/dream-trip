@@ -1,0 +1,75 @@
+.lista{
+padding: 80px 8%;
+background-color: #fff9fd;
+}
+
+.titulo{
+color: #b1067d;
+text-align: center;
+font-size: 2rem;
+margin-bottom:10px;
+}
+
+.subtitulo{
+text-align: center;
+color: #d3278e;
+margin-bottom: 40px;
+
+}
+
+.grade{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+gap:25px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.card{
+
+background-color: white;
+border: 1px solid #f1dce9;
+border-radius: 20px;
+padding: 25px;
+box-shadow: 0 8px 25px rgba(80, 30, 60, 0.08);
+transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.card:hover{
+transform: translateY(5px);
+box-shadow: 0 12px 30px rgba(80,30,60,0.14);
+
+}
+
+.card h3{
+color: #c34f8a;
+font-size: 1.5rem;
+margin-bottom: 18px;
+
+
+}
+
+.card p {
+color: #6d3f5b;
+margin: 10px 0;
+line-height: 1.5;
+}
+
+.observacao{
+margin-top: 18px;
+font-style: italic;
+border-top: 1px solid #f1dce9;
+padding-top: 15px;
+}
+
+.mensagem{
+text-align: center;
+color: #806575;
+font-size:1.1rem;
+}
+
+.erro{
+text-align: center;
+color:#ad1f45;
+}
