@@ -9,7 +9,7 @@ function Hero({aoClicarCadastrar}){
             <p className={styles.destaque}>Minhas próximas aventuras.</p>
 
             <h1>Nunca desista
-                <span>o Mundo está me esperando para conhecer ele!!!</span>
+                <span>o Mundo está te esperando para conhecer ele!!!</span>
             </h1>
 
             <p className={styles.descricao}>

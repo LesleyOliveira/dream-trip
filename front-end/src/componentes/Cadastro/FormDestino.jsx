@@ -25,6 +25,25 @@ function FormDestino() {
     }
 
 
+    async function cadastrarDestino() {
+        const resposta = await fetch('http://localhost:8080/destinos' ,{
+           method: 'POST',
+           headers: {
+            'Content-Type': 'application/json'
+           },
+           body: JSON.stringify(formulario)
+        })
+            console.log('STatus:',resposta.status)
+
+            if(!resposta.ok){
+                console.log("ERRO PRA CADASTROOOO")
+                return
+            }
+        const dados = await resposta.json()
+        console.log('DESTINO QUE FOI:',dados)
+
+    }
+
     return (
         <section className={styles.formulario} id="cadastro">
 
@@ -35,10 +54,11 @@ function FormDestino() {
             </p>
 
             <div className={styles.form}>
+
             <div className={styles.campo}>
-                <label htmlFor="">Nome do destino</label>
+                <label>Nome do destino</label>
                 <input type="text"
-                nome="nome"
+                name="nome"
                 value={formulario.nome}
                 onChange={alterarCampo}
                 />
@@ -75,6 +95,16 @@ function FormDestino() {
                 </select>
             </div>
 
+            <div className={styles.campo}>
+             <label>Categoria</label>
+             <select name="categoria" value={formulario.categoria}onChange={alterarCampo} >
+                <option value="">Selecione</option>
+               <option value="PRAIA">Praia</option>
+               <option value="CIDADE">Cidade</option>
+                <option value="NATUREZA">Natureza</option>
+                <option value="HISTORIA">Histórico</option>
+                </select>
+             </div>
 
             <div className={styles.campo}>
                 <label htmlFor="">Custo estimado</label>
@@ -116,7 +146,7 @@ function FormDestino() {
 
             </div>
 
-            <button type="button" className={styles.botao}>Cadastrar destino</button>
+            <button type="button" className={styles.botao} onClick={cadastrarDestino}>Cadastrar destino</button>
 
 
 
