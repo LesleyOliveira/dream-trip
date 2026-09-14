@@ -26,6 +26,50 @@ function FormDestino() {
 
 
     async function cadastrarDestino() {
+
+        if(formulario.nome === ""){
+            alert("Preencha o nome do destino")
+            return;
+        }
+
+
+        if(formulario.cidade === ""){
+            alert("Preencha o nome da cidade")
+            return;
+        }
+
+        if(formulario.pais === ""){
+            alert("Preencha o nome do pais")
+            return;
+        }
+
+        if(formulario.continente === ""){
+            alert("Preencha o nome do continente")
+            return;
+        }
+
+        if(formulario.categoria === ""){
+            alert("selecione uma categoria!!")
+            return;
+        }
+
+        if(formulario.custoEstimado === "" || formulario.custoEstimado <= 0){
+            alert("Informe um valor válido more!")
+            return;
+        }
+
+
+        if(formulario.prioridade === ""){
+            alert("Selecione a prioridade da sua viagem")
+            return;
+        }
+
+        if(formulario.status === ""){
+            alert("Selecione o status")
+            return;
+        }
+
+
         const resposta = await fetch('http://localhost:8080/destinos' ,{
            method: 'POST',
            headers: {
