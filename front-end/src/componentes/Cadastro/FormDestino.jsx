@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from './FormDestino.module.css';
 
-function FormDestino() {
+function FormDestino({aoClicarCadastrar}) {
     const [formulario, setFormulario] = useState({
         nome: '',
         cidade: '',
@@ -85,6 +85,7 @@ function FormDestino() {
             }
         const dados = await resposta.json()
         console.log('DESTINO QUE FOI:',dados)
+        aoClicarCadastrar()
 
     }
 

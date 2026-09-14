@@ -7,7 +7,8 @@ import ListaDestinos from './componentes/ListaDestinos/ListaDestinos'
 
 function App() {
 
-    const[mostrarFormulario, setMostrarFormulario] = useState(false)
+    const[mostrarFormulario, setMostrarFormulario] = useState(false);
+    const[atualizar, setAtualizar] = useState(false);
  
   return( 
 
@@ -15,9 +16,9 @@ function App() {
       <Header aoClicarCadastrar={() => (setMostrarFormulario(true))} />
       <Hero  aoClicarCadastrar={() => setMostrarFormulario(true)}  />
 
-      {mostrarFormulario && <FormDestino />}
+      {mostrarFormulario && (<FormDestino aoClicarCadastrar={() => setAtualizar(!atualizar)} />)}
 
-      <ListaDestinos />
+      <ListaDestinos atualizar={atualizar} />
 
     </>
 

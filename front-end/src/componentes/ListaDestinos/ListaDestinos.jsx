@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import styles from "./ListaDestinos.module.css";
 
-function ListaDestinos(){
+function ListaDestinos({atualizar}){
 
     const[destinos, setDestinos] = useState([]);
     const[carregando, setCarregando] = useState(true);
     const[erro, setErro] = useState("");
 
-    useEffect(() =>{buscarDestinos();},[]);
+    useEffect(() =>{buscarDestinos();},[atualizar]);
 
     async function buscarDestinos(){
 

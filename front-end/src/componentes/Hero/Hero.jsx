@@ -4,10 +4,11 @@ import styles from './Hero.module.css'
 function Hero({aoClicarCadastrar}){
 
     return(
+
         <section className={styles.hero} id="inicio">
         <div className={styles.conteudo}>
             <p className={styles.destaque}>Minhas próximas aventuras.</p>
-
+            <h1></h1>
             <h1>Nunca desista
                 <span>o Mundo está te esperando para conhecer ele!!!</span>
             </h1>
